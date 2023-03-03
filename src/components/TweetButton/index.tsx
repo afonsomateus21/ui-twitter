@@ -3,11 +3,17 @@ import { Button } from "./styles";
 
 interface TweetButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
+  width?: string;
+  padding: string;
 }
 
-export function TweetButton({ children, ...rest }: TweetButtonProps) {
+export function TweetButton({ children, width, padding, ...rest }: TweetButtonProps) {
   return (
-    <Button {...rest}>
+    <Button 
+      width={width!}
+      padding={padding}
+      {...rest}
+    >
       { children }
     </Button>
   );

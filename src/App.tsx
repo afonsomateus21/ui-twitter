@@ -1,10 +1,15 @@
-import { useState } from 'react'
-import { Home } from './components/Home'
+import { SideBar } from './components/SideBar'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
+import { Container } from './styles/global'
 
 
 function App() {
   return (
-    <Home/>
+    <Container>
+      <SideBar />
+      <RouterProvider router={router} />
+    </Container>
   )
 }
 

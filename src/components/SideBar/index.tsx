@@ -43,7 +43,10 @@ export function SideBar() {
         </a>
       </nav>
 
-      <TweetButton>
+      <TweetButton
+        width={'100%'}
+        padding={'1rem'}
+      >
         Tweet
       </TweetButton>
     </Container>

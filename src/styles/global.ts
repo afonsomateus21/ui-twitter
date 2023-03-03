@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     --border-white: #ebeef0;
     --white: #fff;
     --placeholder-grey: #5b7083;
+    --tweet-user-color: #89a2b8;
   }
 
   body {
@@ -30,4 +31,12 @@ export const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
   }
+`
+
+export const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1000px;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
 `

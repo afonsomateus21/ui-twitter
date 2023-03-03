@@ -1,4 +1,4 @@
-import { SideBar } from "../SideBar";
+import { SideBar } from "../../components/SideBar";
 import { Timeline } from "../Timeline";
 import { Container } from "./style";
 
