@@ -1,3 +1,4 @@
+import { Pencil } from "phosphor-react";
 import { ButtonHTMLAttributes, HTMLProps, ReactNode } from "react";
 import { Button } from "./styles";
 
@@ -14,7 +15,8 @@ export function TweetButton({ children, width, padding, ...rest }: TweetButtonPr
       padding={padding}
       {...rest}
     >
-      { children }
+      <Pencil />
+      <span>{ children }</span>
     </Button>
   );
 }

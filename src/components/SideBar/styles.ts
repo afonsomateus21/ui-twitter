@@ -16,7 +16,7 @@ export const Container = styled.aside`
     flex-direction: column;
     gap: 2rem;
 
-    a {
+    & > a {
       display: flex;
       align-items: center;
       gap: 1.25rem;
@@ -32,6 +32,17 @@ export const Container = styled.aside`
       &.active {
         color: var(--twitter-blue);
       }
+
+      @media (max-width: 780px) {
+        & > span {
+          display: none;
+        }
+      }
     }
+  }
+
+  @media (max-width: 780px) {
+    padding: 1.5rem 0.75rem;
+    align-items: center;
   }
 `

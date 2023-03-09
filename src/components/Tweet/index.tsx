@@ -1,4 +1,5 @@
 import { ArrowsClockwise, ChatCircle, Heart } from "phosphor-react";
+import { Link } from "react-router-dom";
 import { Container, Content, Footer, Header } from "./styles";
 
 interface TweetProps {
@@ -7,7 +8,7 @@ interface TweetProps {
 
 export function Tweet({ content }: TweetProps) {
   return (
-    <Container href="#">
+    <Container to="status">
       <img src="https://github.com/afonsomateus21.png" alt="Afonso Mateus" />
 
       <div>

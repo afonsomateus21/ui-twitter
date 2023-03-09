@@ -20,4 +20,24 @@ export const Button = styled.button<ButtonProps>`
   &:hover {
     filter: brightness(0.9);
   }
+
+  & > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+
+    @media (max-width: 780px) {
+      display: block;
+    }
+  }
+
+  & > span {
+    @media (max-width: 780px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 780px) {
+    padding: 0.6rem;
+  }
 `
